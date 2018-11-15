@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class RestaurantFragment extends Fragment {
 
     // MARK: - Properties
-    final ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
+    final ArrayList<Location> restaurants = new ArrayList<Location>();
 
     public RestaurantFragment() {
         // Required empty public constructor
@@ -20,8 +20,8 @@ public class RestaurantFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+
+        View rootView = inflater.inflate(R.layout.tour_list, container, false);
+        return rootView;
     }
 }

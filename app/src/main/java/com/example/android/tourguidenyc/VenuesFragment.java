@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class VenuesFragment extends Fragment {
 
     // MARK: - Properties
-    final ArrayList<Venue> venues = new ArrayList<Venue>();
+    final ArrayList<Location> venues = new ArrayList<Location>();
 
     public VenuesFragment() {
         // Required empty public constructor
