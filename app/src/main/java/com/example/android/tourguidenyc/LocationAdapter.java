@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class TourGuideAdapter extends ArrayAdapter<Location> {
+public class LocationAdapter extends ArrayAdapter<Location> {
 
     // MARK:- Properties
 
-    private static final String LOG_TAG = TourGuideAdapter.class.getSimpleName();
+    private static final String LOG_TAG = LocationAdapter.class.getSimpleName();
 
-    public TourGuideAdapter(Activity context, ArrayList<Location> locations, int categoryColor) {
+    public LocationAdapter(Activity context, ArrayList<Location> locations) {
         super(context, 0, locations);
 
     }
@@ -35,10 +35,10 @@ public class TourGuideAdapter extends ArrayAdapter<Location> {
         Location local_location = getItem(position);
 
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        miwokTextView.setText(local_location.getMiwokTranslation());
+        miwokTextView.setText(local_location.getName());
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        defaultTextView.setText(local_location.getDefaultTranslation());
+        defaultTextView.setText(local_location.getDescription());
 
         ImageView imageView = listItemView.findViewById(R.id.image);
         if (local_location.hasImage()) {
@@ -48,9 +48,9 @@ public class TourGuideAdapter extends ArrayAdapter<Location> {
             imageView.setVisibility(View.GONE);
         }
 
-        View textContainer = listItemView.findViewById(R.id.text_container);
-        int color = ContextCompat.getColor(getContext(), mColorResourceID);
-        textContainer.setBackgroundColor(color);
+//        View textContainer = listItemView.findViewById(R.id.text_container);
+//        int color = ContextCompat.getColor(getContext(), mColorResourceID);
+//        textContainer.setBackgroundColor(color);
 
         return listItemView;
     }
