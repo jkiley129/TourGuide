@@ -2,6 +2,5 @@
 <resources>
 
     <dimen name="list_item_height">100dp</dimen>
-    <dimen name="location_item_height">200dp</dimen>
 
 </resources>
