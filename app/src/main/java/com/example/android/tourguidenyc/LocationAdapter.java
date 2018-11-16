@@ -48,11 +48,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
             imageView.setVisibility(View.GONE);
         }
 
-//        View textContainer = listItemView.findViewById(R.id.text_container);
-//        int color = ContextCompat.getColor(getContext(), mColorResourceID);
-//        textContainer.setBackgroundColor(color);
-
         return listItemView;
     }
-
 }
