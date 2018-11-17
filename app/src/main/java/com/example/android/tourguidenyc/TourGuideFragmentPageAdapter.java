@@ -8,8 +8,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class TourGuideFragmentPageAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
-    public TourGuideFragmentPageAdapter(FragmentManager fm) {
+    public TourGuideFragmentPageAdapter(FragmentManager fm, Context context) {
+
         super(fm);
+        this.mContext = context;
     }
 
     @Override
@@ -36,7 +38,7 @@ public class TourGuideFragmentPageAdapter extends FragmentPagerAdapter {
         // Generate title based on item position
         switch (position) {
             case 0:
-                return mContext.getString(R.string.tab_restaurants);
+                return mContext.getString(R.string.tab_food);
             case 1:
                 return mContext.getString(R.string.tab_sights);
             case 2:
