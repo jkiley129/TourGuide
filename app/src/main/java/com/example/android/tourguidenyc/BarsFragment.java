@@ -26,10 +26,10 @@ public class BarsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        bars.add(new Location("Patent Pending", "A new speakeasy that is a coffee shop by day, and a cocktail bar at night"));
-        bars.add(new Location("Up & Up", "A great cocktail bar in the heart of Greewich Village"));
-        bars.add(new Location("Dante", "A trendy Italian restaurant that serves Negroni's on tap"));
-        bars.add(new Location("Bathtub Gin", "A hidden speakeasy with a literal bathtub that is great for a photo op"));
+        bars.add(new Location(getString(R.string.bars_title_1), getString(R.string.bars_subTitle_1)));
+        bars.add(new Location(getString(R.string.bars_title_2), getString(R.string.bars_subTitle_2)));
+        bars.add(new Location(getString(R.string.bars_title_3), getString(R.string.bars_subTitle_3)));
+        bars.add(new Location(getString(R.string.bars_title_4), getString(R.string.bars_subTitle_4)));
 
         View rootView = inflater.inflate(R.layout.tour_list, container, false);
 

@@ -22,10 +22,10 @@ public class RestaurantFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        restaurants.add(new Location("Sushi by Bou", "A casual Omakase Sushi bar with reasonable prices and amazing Sushi"));
-        restaurants.add(new Location("Pylos", "A Greek Restaurant in the East Village with authentic Greek cuisine and unique decor"));
-        restaurants.add(new Location("KazuNori", "A casual handroll Sushi bar from the people who did SugarFish"));
-        restaurants.add(new Location("Mala Project", "Chinese hot pot with amazing spices and unique flavors"));
+        restaurants.add(new Location(getString(R.string.restaurants_title_1), getString(R.string.restaurants_subTitle_1)));
+        restaurants.add(new Location(getString(R.string.restaurants_title_2), getString(R.string.restaurants_subTitle_2)));
+        restaurants.add(new Location(getString(R.string.restaurants_title_3), getString(R.string.restaurants_subTitle_3)));
+        restaurants.add(new Location(getString(R.string.restaurants_title_4), getString(R.string.restaurants_subTitle_4)));
 
         View rootView = inflater.inflate(R.layout.tour_list, container, false);
 

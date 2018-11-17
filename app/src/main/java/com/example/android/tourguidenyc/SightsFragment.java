@@ -29,10 +29,10 @@ public class SightsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        sights.add(new Location("Central Park", "A must visit for any trip to NYC. Escape the hustle and bustle.", R.drawable.ic_central_park));
-        sights.add(new Location("World Trade Center Memorial", "A sobering site commemorating a tragic event", R.drawable.ic_world_trade));
-        sights.add(new Location("Empire State Building", "Who doesn't love this NYC architectural landmark?", R.drawable.ic_empire_state));
-        sights.add(new Location("Statue of Liberty", "Pick a warm day to go see Lady Liberty from a boat", R.drawable.ic_statue_of_liberty));
+        sights.add(new Location(getString(R.string.sights_title_1), getString(R.string.sights_subTitle_1), R.drawable.ic_central_park));
+        sights.add(new Location(getString(R.string.sights_title_2), getString(R.string.sights_subTitle_2), R.drawable.ic_world_trade));
+        sights.add(new Location(getString(R.string.sights_title_3), getString(R.string.sights_subTitle_3), R.drawable.ic_empire_state));
+        sights.add(new Location(getString(R.string.sights_title_4), getString(R.string.sights_subTitle_4), R.drawable.ic_statue_of_liberty));
 
         View rootView = inflater.inflate(R.layout.image_list, container, false);
 
